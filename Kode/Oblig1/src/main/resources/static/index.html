@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Obligatorisk oppgave 1</title>
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+<h1>Bestilling av kinobiletter</h1>
+
+Velg film:
+<select id="filmer" value="film">
+    <option>Velg film her</option>
+    <option>The Avengers</option>
+    <option>The Avengers: Age of Ultron</option>
+    <option>Avengers: Infinity War</option>
+    <option>Avengers: Endgame</option>
+</select>
+
+<br>
+<br>
+
+<table>
+    <tr>
+        <td>Antall</td>
+        <td><input id="antall" type="number" style="width: 20px;"></td>
+        <td><div id="antallValidering"></div></td>
+    </tr>
+</table>
+
+<br>
+<br>
+
+
+<table>
+    <tr>
+        <td>Fornavn</td>
+        <td><input id="fornavn" type="text"></td>
+        <td><div id="fornavnValidering"></div></td>
+    </tr>
+    <tr>
+        <td>Etternavn</td>
+        <td><input id="etternavn" type="text"></td>
+        <td><div id="etternavnValidering"></div></td>
+    </tr>
+    <tr>
+        <td>Telefonnr</td>
+        <td><input id="telefonnr" type="text"></td>
+        <td><div id="telefonnrValidering"></div></td>
+    </tr>
+    <tr>
+        <td>Epost</td>
+        <td><input id="epost" type="text"></td>
+        <td><div id="epostValidering"></div></td>
+    </tr>
+    <tr>
+        <td><button value="KjøpBillett" onclick="kjøpBillett()">Kjøp billett</button></td>
+    </tr>
+</table>
+
+<h3>Alle billetter</h3>
+<div id="visBilletter"></div>
+<button value="SlettBillettene" onclick="slettBillett()">Slett alle billettene</button>
+
+</body>
+</html>
