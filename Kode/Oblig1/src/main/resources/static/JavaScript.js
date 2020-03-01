@@ -17,6 +17,9 @@ function kjøpBillett() {
         telefonnr: telefonnr,
         epost: epost
     }
+    //Her pusher du billet uansett om den har riktig verdier eller ikke , det er feil her 
+    //Du må bruke if else til å sjekke om verdier er gyldige ,da pusher du . 
+    
 
     billetter.push(billett);
     
