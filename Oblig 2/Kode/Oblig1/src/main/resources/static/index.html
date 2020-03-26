@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Obligatorisk oppgave 1</title>
+    <script src="JavaScript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <h1>Bestilling av kinobiletter</h1>
+            <form class="form">
+
+                <div class="form-group">
+                    <label for="filmer">Velg film:</label><br>
+                    <select id="filmer" value="film">
+                        <option>Velg film her</option>
+                        <option>The Avengers</option>
+                        <option>The Avengers: Age of Ultron</option>
+                        <option>Avengers: Infinity War</option>
+                        <option>Avengers: Endgame</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="antall">Antall:</label> <br>
+                    <input id="antall" type="number" style="width: 40px;">
+                    <div id="antallValidering"></div>
+                </div>
+
+                <div class="from-group">
+                    <label for="fornavn">Fornavn:</label><br>
+                    <input id="fornavn" type="text">
+                    <div id="fornavnValidering"></div>
+                </div>
+
+                <br>
+
+                <div class="from-group">
+                    <label for="etternavn">Etternavn:</label><br>
+                    <input id="etternavn" type="text">
+                    <div id="etternavnValidering"></div>
+                </div>
+
+                <br>
+
+                <div class="from-group">
+                    <label for="telefonnr">Telefonnummer:</label><br>
+                    <input id="telefonnr" type="text">
+                    <div id="telefonnrValidering"></div>
+                </div>
+
+                <br>
+
+                <div class="from-group">
+                    <label for="epost">Epost:</label><br>
+                    <input id="epost" type="text">
+                    <div id="epostValidering"></div>
+                </div>
+            </form>
+
+            <br>
+            <button class="btn btn-primary" value="KjøpBillett" onclick="kjøpBillett()">Kjøp billett</button>
+            <br>
+
+        </div>
+
+        <div class="col-md-8">
+            <h1>Alle billetter:</h1>
+            <div id="visBilletter"></div>
+            <button class="btn-btn-danger" value="SlettBillettene" onclick="slettBillett()">Slett alle billettene</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
